@@ -1,0 +1,83 @@
+/* src/styles/App.css */
+
+* {
+  box-sizing: border-box; /* Ensures padding and borders are included in total width/height */
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif; /* Use a clean, responsive font */
+  line-height: 1.6; /* Improve readability */
+  padding: 0;
+  background-color: #f4f4f4; /* Light background color for contrast */
+}
+
+.container {
+  max-width: 1200px; /* Max width for large screens */
+  margin: 0 auto; /* Center container */
+  padding: 20px; /* Padding around the container */
+}
+
+/* Responsive images */
+img {
+  max-width: 100%; /* Ensure images scale down with the screen */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Space out nav items */
+  align-items: center; /* Center items vertically */
+  padding: 15px 20px; /* Padding for the navbar */
+  background-color: #007bff; /* Bootstrap primary color */
+  color: white;
+}
+
+.nav-links {
+  display: flex;
+  gap: 15px; /* Space between nav links */
+}
+
+/* Responsive navbar */
+@media (max-width: 768px) {
+  .nav-links {
+      flex-direction: column; /* Stack links on smaller screens */
+      align-items: flex-start; /* Align links to the left */
+  }
+}
+
+/* Media queries for overall responsiveness */
+@media (max-width: 600px) {
+  .container {
+      padding: 10px; /* Reduce padding on smaller screens */
+  }
+  
+  h1 {
+      font-size: 1.5rem; /* Adjust font size for headings */
+  }
+
+  p {
+      font-size: 0.9rem; /* Adjust font size for paragraphs */
+  }
+}
+/* Global style for swiper images */
+.swiper-slide img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;  /* Ensures the image covers the container without distortion */
+}
+.swiper-container {
+  width: 100%;
+  height: 300px;  /* Adjust the height based on your needs */
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;  /* Center the content */
+  align-items: center;
+}
+
+
+
+

@@ -1,0 +1,82 @@
+/* Basic styles for the About Us section */
+.aboutus {
+    padding: 50px;
+    text-align: center;
+    background-color: #f1f9fc; /* Light blue background */
+}
+
+.aboutus-title {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #1a3c55; /* Dark blue for the title */
+}
+
+.aboutus-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.aboutus-card {
+    background-color: #ffffff; /* White background for cards */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    border: 1px solid #e1e1e1; /* Subtle border */
+}
+
+.aboutus-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Colors for individual cards */
+.aboutus-card:nth-child(1) {
+    background-color: #e9f7fa; /* Light cyan background for the first card */
+}
+
+.aboutus-card:nth-child(2) {
+    background-color: #f9e6a2; /* Light yellow background for the second card */
+}
+
+.aboutus-card:nth-child(3) {
+    background-color: #f8d7da; /* Light pink background for the third card */
+}
+
+.aboutus-card:nth-child(4) {
+    background-color: #d1e7dd; /* Light green background for the fourth card */
+}
+
+.aboutus-card:nth-child(5) {
+    background-color: #fff3cd; /* Soft yellow for the last card */
+}
+
+/* Card heading color */
+.aboutus-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Card paragraph text color */
+.aboutus-card p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Hover effect: changing text color and card background */
+.aboutus-card:hover {
+    background-color: #d1d8e0; /* Greyish background on hover */
+    color: #1a3c55; /* Dark blue text on hover */
+}
+
+.aboutus-card h3:hover {
+    color: #f39c12; /* Gold color for the heading on hover */
+}
+
+.aboutus-card p:hover {
+    color: #7f8c8d; /* Darker text color for the paragraph on hover */
+}

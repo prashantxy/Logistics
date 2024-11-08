@@ -1,0 +1,45 @@
+/* src/components/services.css */
+.services {
+    padding: 60px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2.8rem;  /* Increased size of the title */
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /* Increased minimum width of each card */
+    gap: 30px;
+    justify-items: center;
+}
+
+.service-item {
+    background-color: #fff;
+    padding: 30px;  /* Increased padding for larger blocks */
+    border-radius: 10px;  /* Increased border-radius for rounded corners */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);  /* Slightly stronger shadow for emphasis */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-height: 250px;  /* Increased the minimum height for larger blocks */
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);  /* Stronger hover effect */
+}
+
+.service-item h3 {
+    font-size: 2rem;  /* Increased font size for the title */
+    color: #1a3c55;
+    margin-bottom: 15px;
+}
+
+.service-item p {
+    font-size: 1.2rem;  /* Slightly larger text for better readability */
+    color: #666;
+    line-height: 1.6;  /* Increased line height for better spacing between lines */
+}

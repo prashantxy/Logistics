@@ -1,0 +1,101 @@
+/* src/components/navbar.css */
+
+/* Base styling for the navbar */
+.navbar {
+    background-color: #333;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    transition: background-color 0.3s ease;
+}
+
+/* Navbar items list */
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Individual navbar item styling */
+.navbar .nav-item {
+    margin: 0 20px;
+    position: relative;
+}
+
+/* Link styling */
+.navbar .nav-item a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Animation for link hover (underline effect) */
+.navbar .nav-item a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    bottom: 0;
+    left: 50%;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+/* Hover effect on links */
+.navbar .nav-item a:hover {
+    color: #ff6347; /* Tomato color on hover */
+    transform: scale(1.1); /* Slightly enlarge text */
+}
+
+.navbar .nav-item a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+/* Navbar background color change on scroll */
+.navbar.scrolled {
+    background-color: #222;
+}
+
+/* Adding animation for navbar items to fade in */
+.navbar ul {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+/* Keyframes for fadeIn animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Smooth transition for navbar background color when scrolling */
+.navbar {
+    transition: background-color 0.3s ease;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar .nav-item {
+        margin: 10px 0;
+    }
+}
