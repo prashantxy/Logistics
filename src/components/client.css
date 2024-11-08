@@ -1,0 +1,94 @@
+/* Basic styles for the Clients section */
+.clients {
+    padding: 50px;
+    text-align: center;
+    background-color: #f0f8ff; /* Light blue background for a fresh feel */
+}
+
+.clients h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #2c3e50; /* Darker text color for the title */
+    text-transform: uppercase; /* Uppercase for the title */
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+/* Client List styling */
+.clients-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+/* Client Item styles */
+.client-item {
+    background-color: #ffffff; /* White background for each client card */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    overflow: hidden;
+    border: 1px solid #e1e1e1; /* Subtle border */
+    opacity: 0;
+    animation: fadeIn 0.5s forwards; /* Fade-in animation */
+}
+
+/* Animation for client cards */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Hover effect for client items */
+.client-item:hover {
+    transform: translateY(-10px); /* Slight lift on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    background-color: #dbe7f1; /* Light blue background on hover */
+    cursor: pointer; /* Cursor pointer on hover */
+}
+
+/* Client Item heading */
+.client-item h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #34495e; /* Slightly darker blue for the client name */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect for client heading */
+.client-item h3:hover {
+    color: #007acc; /* Light blue color on hover */
+}
+
+/* Paragraph styles for address and contact information */
+.client-item p {
+    font-size: 1rem;
+    color: #7f8c8d; /* Light grey text for address/contact */
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+/* Hover effects on client item paragraphs */
+.client-item p:hover {
+    color: #34495e; /* Darker grey text on hover */
+}
+
+/* Styling for client labels */
+.client-item strong {
+    font-weight: bold;
+    color: #2c3e50; /* Dark color for labels */
+}
+
+/* Hover effects on labels */
+.client-item strong:hover {
+    color: #007acc; /* Light blue color on hover */
+}
